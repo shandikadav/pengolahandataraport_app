@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09EA6C7F-D938-4984-84B9-394A3A50B255}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>APLIKASI_PENGOLAHAN_DATA_RAPORT.My.MyApplication</StartupObject>
+    <RootNamespace>APLIKASI_PENGOLAHAN_DATA_RAPORT</RootNamespace>
+    <AssemblyName>APLIKASI PENGOLAHAN DATA RAPORT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>APLIKASI PENGOLAHAN DATA RAPORT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>APLIKASI PENGOLAHAN DATA RAPORT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_APPdataraportDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_APPdataraportDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_APPdataraportDataSet11.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_APPdataraportDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DB_APPdataraportDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_APPdataraportDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.vb">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataAkun.Designer.vb">
+      <DependentUpon>FrmDataAkun.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataAkun.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataSiswa.Designer.vb">
+      <DependentUpon>FrmDataSiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDataSiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJurusan.Designer.vb">
+      <DependentUpon>FrmJurusan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJurusan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMapel.Designer.vb">
+      <DependentUpon>FrmMapel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMapel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiswa.Designer.vb">
+      <DependentUpon>FrmSiswa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiswa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTU.Designer.vb">
+      <DependentUpon>FrmTU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUbahPassword.Designer.vb">
+      <DependentUpon>FrmUbahPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUbahPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataAkun.resx">
+      <DependentUpon>FrmDataAkun.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataSiswa.resx">
+      <DependentUpon>FrmDataSiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJurusan.resx">
+      <DependentUpon>FrmJurusan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMapel.resx">
+      <DependentUpon>FrmMapel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiswa.resx">
+      <DependentUpon>FrmSiswa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTU.resx">
+      <DependentUpon>FrmTU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUbahPassword.resx">
+      <DependentUpon>FrmUbahPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DB_APPdataraportDataSet1.xsc">
+      <DependentUpon>DB_APPdataraportDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_APPdataraportDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_APPdataraportDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_APPdataraportDataSet1.xss">
+      <DependentUpon>DB_APPdataraportDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_APPdataraportDataSet11.xsc">
+      <DependentUpon>DB_APPdataraportDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DB_APPdataraportDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_APPdataraportDataSet11.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_APPdataraportDataSet11.xss">
+      <DependentUpon>DB_APPdataraportDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="DB_APPdataraportDataSet2.xsc">
+      <DependentUpon>DB_APPdataraportDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_APPdataraportDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_APPdataraportDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_APPdataraportDataSet2.xss">
+      <DependentUpon>DB_APPdataraportDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
